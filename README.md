@@ -1,10 +1,11 @@
-# Billy's Barber - React Barbershop Website
+# - React stylexstudio Website
 
 [Live Demo](https://billysbarber.netlify.app)
 
 Billy's Barber is a modern and stylish e-commerce site built with React and designed using Tailwind CSS.
 
 ## Table of Contents
+
 - [Features](#features)
 - [Installation](#installation)
 - [Technologies](#technologies)
@@ -25,27 +26,31 @@ Billy's Barber is a modern and stylish e-commerce site built with React and desi
    ```bash
    git clone https://github.com/joayo13/barbershop.git
    ```
+
 2. **Install Dependencies:**
 
    ```bash
    cd barbershop
    npm install
    ```
+
 3. **Start the Client**
 
    ```bash
    npm start
    ```
+
    The project should now be running locally at http://localhost:3000.
 
 ## Technologies
+
 - **React**
 
 - **TailwindCSS**
 
-
 ## License
+
 This project is licensed under the MIT License. For more details, see the LICENSE file.
 
 Enjoy your journey with Billy's Barbershop! ✂️
-   
+# stylexstudioweb
