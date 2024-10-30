@@ -14,7 +14,7 @@ function App() {
       <VideoBanner />
       <h2 className="text-center py-4 text-6xl text-red-900">Style x Studio</h2>
       <p className="italic text-center text-xl">
-        We provide the freshest cuts in the city
+        We provide the freshest cuts in the city.
       </p>
       <section className="py-4">
         <ImageCarousel />
