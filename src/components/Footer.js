@@ -14,17 +14,36 @@ function Footer() {
         <Link to="/services">View Our Services</Link>
       </ul>
       <ul className="flex gap-4 flex-col items-center justify-center">
-        <img
-          className="w-10"
-          alt="Facebook"
-          src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png"
-        ></img>
-        <img
-          className="w-10"
-          alt="instagram"
-          src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"
-        ></img>
-        <img src={whatsappImage} alt="WhatsApp" className="w-10" />
+        <a
+          href="https://www.facebook.com/StyleXStudio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="w-10"
+            alt="Facebook"
+            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png"
+          ></img>
+        </a>
+        <a
+          href="https://www.instagram.com/stylexstudio1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="w-10"
+            alt="instagram"
+            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"
+          ></img>
+        </a>
+        <a
+          href="https://wa.me/923344844545"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-green-500 hover:underline"
+        >
+          <img src={whatsappImage} alt="WhatsApp" className="w-10" />
+        </a>
       </ul>
     </div>
   );
