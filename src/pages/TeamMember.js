@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
-import scrollToTop from '../helpers/scrollToTop'
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import scrollToTop from "../helpers/scrollToTop";
 
 function TeamMember() {
-    const params = useParams()
-    const [member, setMember] = useState({})
-    const members = {
-        sierra: {
-            name: 'Sierra',
-            desc: `
+  const params = useParams();
+  const [member, setMember] = useState({});
+  const members = {
+    sierra: {
+      name: "Sierra",
+      desc: `
             Sierra, a talented female hairstylist, had always been drawn to the world of beauty and grooming. Growing up in a quiet suburban town, she often experimented with hairdos on her friends and family, showcasing an innate talent for creating stunning hairstyles. Her childhood fascination with hair eventually blossomed into a passion, and she decided to pursue a career in hairstyling.
         
             After graduating from beauty school with top honors, Sierra set her sights on making a name for herself in the bustling city of Ottawa. She was eager to explore her newfound skills in a more dynamic environment. It was during this time that she heard about "Billy's Barber," a renowned barbershop in the heart of the city. While it primarily catered to men's grooming needs, Billy's Barber had earned a reputation for its commitment to precision and style.
@@ -21,12 +21,13 @@ function TeamMember() {
         
             Sierra's transition from a suburban hairstylist to a respected member of Billy's Barber was not just a professional achievement but a testament to her determination and passion for her craft. She had found her niche in a place she never expected and continued to thrive, leaving a mark on the world of grooming and style in Ottawa.
           `,
-            image: 'https://images.pexels.com/photos/6962024/pexels-photo-6962024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            subheader: 'Expert Stylist'
-        },
-        billy: {
-            name: 'Billy',
-            desc: `
+      image:
+        "https://images.pexels.com/photos/6962024/pexels-photo-6962024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      subheader: "Expert Stylist",
+    },
+    billy: {
+      name: "Billy",
+      desc: `
             Billy, the charismatic owner of "Billy's Barber," was a man with a deep love for the art of traditional barbering. He was born and raised in the heart of Ottawa, where he learned the importance of community and the value of hard work from a young age. Billy's father had been a barber, and he had fond memories of watching his father transform clients with expert precision and attention to detail.
         
             After honing his skills through years of apprenticeship under his father's guidance, Billy decided to continue his family's legacy by opening his own barbershop. He wanted to create a place where men could not only get a top-notch haircut but also relax, unwind, and connect with others.
@@ -39,12 +40,13 @@ function TeamMember() {
         
             Billy's story was one of passion, dedication, and the enduring spirit of a barber who had created more than just a place to get a haircut – he had built a haven where people found a sense of belonging, tradition, and the timeless art of grooming in the heart of Ottawa.
           `,
-            image: 'https://images.pexels.com/photos/6475046/pexels-photo-6475046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            subheader: 'Master Barber'
-        },
-        jonny: {
-            name: 'Jonny',
-            desc: `
+      image:
+        "https://images.pexels.com/photos/6475046/pexels-photo-6475046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      subheader: "Master Barber",
+    },
+    jonny: {
+      name: "Jonny",
+      desc: `
             Jonny, the talented stylist at "Billy's Barber," brought a unique flair to the establishment. Growing up in a family of artists, Jonny was drawn to the world of hair styling from an early age. He would often experiment with his own hair and those of willing friends, showcasing an innate talent for creative and unconventional styles.
         
             After completing his formal education in hairstyling, Jonny set out to explore the bustling city of Ottawa in search of a place that aligned with his vision of artistic expression through hair. It was then that he stumbled upon "Billy's Barber," a renowned barbershop known for its commitment to precision and style.
@@ -59,38 +61,49 @@ function TeamMember() {
         
             Jonny's story was one of artistic passion, self-expression, and the harmonious fusion of traditional and contemporary hairstyling that made "Billy's Barber" a place where clients could not only receive a top-notch haircut but also embark on a transformative journey of self-discovery.
           `,
-            image: 'https://images.pexels.com/photos/2834009/pexels-photo-2834009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            subheader: 'Expert Stylist'
-        }
+      image:
+        "https://images.pexels.com/photos/2834009/pexels-photo-2834009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      subheader: "Expert Stylist",
+    },
+  };
+  useEffect(() => {
+    scrollToTop();
+    if (params.id === "sierra") {
+      setMember(members.sierra);
     }
-    useEffect(() => {
-        scrollToTop()
-        if(params.id === 'sierra') {
-            setMember(members.sierra)
-        }
-        if(params.id === 'billy') {
-            setMember(members.billy)
-        }
-        if(params.id === 'jonny') {
-            setMember(members.jonny)
-        }
-      },[])
-    return (
-      <div className='min-h-screen'>
-          <div className='relative'>
-              <img className='brightness-75 grayscale object-cover h-[40vh] object-left-bottom w-full' src='https://lella.qodeinteractive.com/wp-content/uploads/2019/08/title-area-img-4.jpg'></img>
-              <h2 className="absolute h-full top-0 flex items-center left-1/2 -translate-x-1/2 text-center py-4 text-6xl text-red-800">Our Team</h2>
-          </div>
-        <section className="py-20 gap-4 flex justify-center relative text-neutral-950">
-          <div className="flex flex-col gap-4 px-4">
-            <p className="text-4xl">{member.name}</p>
-            <p className="italic">{member.subheader}</p>
-            <p className="max-w-lg mx-auto text-xl">{member.desc}</p>
-          </div>
-          <img src={member.image} className="w-1/4 h-fit grayscale object-cover hidden md:block" ></img>
-        </section>
+    if (params.id === "billy") {
+      setMember(members.billy);
+    }
+    if (params.id === "jonny") {
+      setMember(members.jonny);
+    }
+  }, [params.id]);
+  return (
+    <div className="min-h-screen">
+      <div className="relative">
+        <img
+          alt="WhatsApp"
+          className="brightness-75 grayscale object-cover h-[40vh] object-left-bottom w-full"
+          src="https://lella.qodeinteractive.com/wp-content/uploads/2019/08/title-area-img-4.jpg"
+        ></img>
+        <h2 className="absolute h-full top-0 flex items-center left-1/2 -translate-x-1/2 text-center py-4 text-6xl text-red-800">
+          Our Team
+        </h2>
       </div>
-    )
+      <section className="py-20 gap-4 flex justify-center relative text-neutral-950">
+        <div className="flex flex-col gap-4 px-4">
+          <p className="text-4xl">{member.name}</p>
+          <p className="italic">{member.subheader}</p>
+          <p className="max-w-lg mx-auto text-xl">{member.desc}</p>
+        </div>
+        <img
+          alt="WhatsApp"
+          src={member.image}
+          className="w-1/4 h-fit grayscale object-cover hidden md:block"
+        ></img>
+      </section>
+    </div>
+  );
 }
 
-export default TeamMember
+export default TeamMember;
