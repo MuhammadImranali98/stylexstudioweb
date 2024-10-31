@@ -77,7 +77,7 @@ function TeamMember() {
     if (params.id === "jonny") {
       setMember(members.jonny);
     }
-  }, [params.id]);
+  }, [params.id, members.sierra, members.billy, members.jonny]);
   return (
     <div className="min-h-screen">
       <div className="relative">
