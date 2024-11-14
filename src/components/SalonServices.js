@@ -32,7 +32,7 @@ function SalonServices() {
           <div className="flex items-end">
             <h2 className="font-bold min-w-fit">Shampoo & Blowdry</h2>
             <div className="h-px w-full mb-1 bg-neutral-400"></div>
-            <p>RS.300+</p>
+            <p>RS.400+</p>
           </div>
           {/* <p>$1/min</p> */}
         </div>
@@ -42,7 +42,7 @@ function SalonServices() {
               Wash, Cut & Style - Curly Hair
             </h2>
             <div className="h-px w-full mb-1 bg-neutral-400"></div>
-            <p>RS.700+</p>
+            <p>RS.1000+</p>
           </div>
           <p>If your name is Eva this haircut is 100% free.</p>
         </div>

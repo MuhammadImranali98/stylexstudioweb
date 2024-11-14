@@ -59,20 +59,20 @@ function About() {
           <p className="italic">Dedicated Professionals</p>
           <p className="max-w-lg mx-auto text-xl">
             In the heart of our town, a small, unassuming barbershop opened its
-            doors. It was in this modest space that Billy embarked on his
-            journey, armed with his trusty scissors, razors, and a relentless
+            doors. It was in this modest space that StyleXStudio embarked on its
+            journey, armed with trusty scissors, razors, and a relentless
             pursuit of perfection. From the very beginning, it was clear that
-            Billy's dedication to his craft set him apart.
+            StyleXStudio's dedication to the craft set it apart.
           </p>
           <p className="max-w-lg mx-auto text-xl">
-            As time went on, Billy's reputation as a master barber grew. He
-            built not only a thriving business but also strong, lasting
-            relationships with his clients. The barbershop became a place where
+            As time went on, StyleXStudio's reputation as a master barber shop
+            grew. It built not only a thriving business but also strong, lasting
+            relationships with its clients. The barbershop became a place where
             friends gathered, stories were shared, and laughter echoed through
             the air.
           </p>
           <p className="max-w-lg mx-auto text-xl">
-            Today, Billy's Barber has evolved, but our commitment to excellence
+            Today, StyleXStudio has evolved, but our commitment to excellence
             remains unchanged. We've expanded our team of talented barbers, each
             handpicked for their skill and dedication to the art of barbering.
             Our barbers are not just professionals; they're artists, craftsmen
@@ -80,6 +80,7 @@ function About() {
             it's an experience.
           </p>
         </div>
+
         <img
           alt="WhatsApp"
           src="https://images.pexels.com/photos/7195808/pexels-photo-7195808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

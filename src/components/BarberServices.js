@@ -9,7 +9,7 @@ function BarberServices() {
           <div className="flex items-end">
             <h2 className="font-bold min-w-fit">Signature Cut & Style</h2>
             <div className="h-px w-full mb-1 bg-neutral-400"></div>
-            <p>RS.400+</p>
+            <p>RS.1000+</p>
           </div>
           <p>
             First visit or has it been longer than 5 weeks? Please book this
@@ -20,7 +20,7 @@ function BarberServices() {
           <div className="flex items-end">
             <h2 className="font-bold min-w-fit">Maintenance Cut</h2>
             <div className="h-px w-full mb-1 bg-neutral-400"></div>
-            <p>RS.300+</p>
+            <p>RS.800+</p>
           </div>
           <p>
             30 min service with just the basics. For those visiting every 5
@@ -31,7 +31,7 @@ function BarberServices() {
           <div className="flex items-end">
             <h2 className="font-bold min-w-fit">Barber Cut - 13 & Under</h2>
             <div className="h-px w-full mb-1 bg-neutral-400"></div>
-            <p>RS.400+</p>
+            <p>RS.500+</p>
           </div>
           <p>Barber style haircuts (clipper and short scissor cuts)</p>
         </div>
@@ -39,9 +39,9 @@ function BarberServices() {
           <div className="flex items-end">
             <h2 className="font-bold min-w-fit">Advanced Fade/Design</h2>
             <div className="h-px w-full mb-1 bg-neutral-400"></div>
-            <p>RS.500+</p>
+            <p>RS.700+</p>
           </div>
-          <p>$1/min</p>
+          {/* <p>$1/min</p> */}
         </div>
         <div className="text-left">
           <div className="flex items-end">
@@ -54,7 +54,7 @@ function BarberServices() {
           <div className="flex items-end">
             <h2 className="font-bold min-w-fit">Scalp Treatment</h2>
             <div className="h-px w-full mb-1 bg-neutral-400"></div>
-            <p>RS.300+</p>
+            <p>RS.1500+</p>
           </div>
         </div>
       </ul>
